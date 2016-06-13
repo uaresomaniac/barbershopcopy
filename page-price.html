@@ -1,20 +1,21 @@
 <!doctype HTML>
-<html lung="ru">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>BarbershopItem</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">  
+  <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css"> 
     </head>
-    <body>
+    <body class="inner-page"> <!--стилизация страниц отличных от главной-->
         <header class="main-header">
-            <div class="container">   
+            <div class="container clearfix">   
                 <nav class="main-navigation">
-                    <div class="item-logo">
-                        <a href="#"><img src="img/item_logo.png" width="368" height="208" alt="Барбершоп борадинский"></a>
-            </div>
+				    <a  class="logo-inner" href="index.html"><img src="img/item_logo.png" width="111" height="24" alt="Барбершоп борадинский"></a>
                     <ul>
                         <li><a href="#">ИНФОРМАЦИЯ</a></li>
                          <li><a href="#">НОВОСТИ</a></li>
-                        <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+						<li class="active"><span>ПРАЙС-ЛИСТ</span></li> <!--хороший тон когда нет ссылки на саму страницу -->
                         <li><a href="#">МАГАЗИН</a></li>
                         <li><a href="#">КОНТАКТЫ</a></li>
           <!--         <li><a href="#">ВХОД</a></li> -->
@@ -25,32 +26,31 @@
             </div>
             </div>
         </header>
-         <main class="container">
-          <h1>Прайс-лист</h1>
-          <div cass="breadcrumbs">
-            <ul class="shop-navigation">
-                <li><a href="#">Главная</a></li>
-                <li><a href="/page-item.html">Прайс-лист</a></li>
+         <main class="container clearfix">
+          <div class="inner-page-title">
+           <h1>Прайс-лист</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li class="current">Прайс-лист</li>
             </ul>
           </div>
-          <div class="price-content">
+          <div class="inner-content">
+            <div class="big-heading">
              <h2>Истинно мужская классика</h2>
-             <div class="items">
+			  </div>
+                <div class="inner-columns clearfix">
+                <div class="inner-column-left">
                  <h2>Мы используем только лучшие средства:</h2>
-                 <ul>
+                 <ul class="custom-list-1">
                    <li>Baxter of california</li>
                    <li>Mr Natty</li>
                    <li>Suavecito</li>
                    <li>Malin+Goetz</li>     
                  </ul>
-              </div>
-             <div class="price-about-us">
-                 <h2>Несколько слов о нас:</h2>
-                 <p>Нашп парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас-это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-              </div>
-              <div class="price-of-services">
-                 <h2>Цены на услуги наших мастеров:</h2>
-                  <table border="1">
+					</div>
+                <div class="inner-column-right">
+                  <h2>Цены на услуги<br> наших мастеров:</h2>
+                  <table class="price-table">
                      <tr>
                         <td>Стрижка</td>
                          <td>1500</td>
@@ -60,10 +60,40 @@
                          <td>500</td>  
                       </tr>
                       <tr>
-                         <td>Накрутка усов</td>
+                         <td>Накрутка усов</td> 
                          <td>350</td>  
                       </tr>
                   </table>
+                   </div>
+                    </div>
+                  <div class="inner-columns clearfix">
+                  <h2>Несколько слов о нас:</h2>
+                   <div class="inner-column-left">
+                 <p>Нашп парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас-это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+					  </div>
+                  <div class="inner-column-right" >
                  <p>Наша мастрерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь Вы можете погрузиться в удобную для Вас атмосферу, чувствовать себя комфортно и свободно!</p>  
               </div>
-             </div>    
+			  </div> 
+			 </div>
+        </main>
+     <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-contacts">
+        Барбершоп Борадинский адрес <br>
+        <a href="#">как нас найти?</a><br> телефон
+      </section>
+      <section class="footer-social">
+        <p>Давай дружить</p>
+        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработчики:</p>
+        <a class="btn" href="htmlacademy.ru">Html Academy</a>
+      </section>
+    </div>
+  </footer>
+    </body>
+</html>

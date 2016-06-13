@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Барбершоп "Бородинский"</title>
-  <link rel="stylesheet" href="../css/barbershop.css">   
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">   
 </head>
 
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <nav class="main-navigation">
         <ul>
           <li><a href="#">ГЛАВНАЯ</a></li>
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">НОВОСТИ</a></li>
-          <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-          <li><a href="#">МАГАЗИН</a></li>
+          <li><a href="/page-price.html">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="page-item.html">МАГАЗИН</a></li>
           <li><a href="#">КОНТАКТЫ</a></li>
           <!--         <li><a href="#">ВХОД</a></li> -->
         </ul>
@@ -30,30 +32,30 @@
     <div class="index-logo">
       <img src="img/logo.png" width="368" height="208" alt="Барбершоп борадинский">
     </div>
-    <section class="features">
+    <section class="features clearfix">
       <div class="features-item">
         <h2 class="features-name">Быстро</h2>
-        <p>Мы делаем свою работу быстро! два часа пролетят незаметно</p>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
       </div>
       <div class="features-item">
         <h2 class="features-name">Круто</h2>
-        <p>some random text</p>
+        <p>Забудте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
       </div>
-      <div calss="features-item">
+      <div class="features-item">
         <h2 class="features-name">Дорого</h2>
-        <p>some random text</p>
+        <p>Наши мастера - професионалы своего дела и не могут стоить дешего. К тому же, разве цена не дает определенный стратут?</p>
       </div>
     </section>
-    <div class="index-content">
+    <div class="index-content clearfix">
       <div class="index-content-left">
         <h2 class="index-content-title">Новости</h2>
         <ul class="news-preview">
           <li>
-            <p>Нам наконец-то завезли Ягермастер</p>
+            <p>Нам наконец-то завезли Ягермастер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
             <time datetime="2016-01-16">16 Января</time>
           </li>
           <li>
-            <p>В нашей команде пополнение, Борис Бритва</p>
+            <p>В нашей команде пополнение, Борис Бритва Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.</p>
             <time datetime="2016-01-18">18 Января</time>
           </li>
         </ul>
@@ -63,24 +65,25 @@
         <h2 class="index-content-title">Фотогалерея</h2>
         <div class="gallery">
           <figure class="gallery-content">
-            <img src="img/photo-1.jpg" width="286" height="164" alt="">
+            <img src="img/foto.png" width="286" height="164" alt="">
           </figure>
-          <button class="btn" href="#">Назад</button>
-          <button class="btn" href="#">Вперед</button>
+          <button class="btn disabled gallery-prev" type="button" disabled>Назад</button>
+          <button class="btn gallery-next" type="button">Вперед</button>
         </div>
       </div>
     </div>
-    <div class="index-content">
+    <div class="index-content clearfix">
       <div class="index-content-left">
         <h2 class="index-content-title">Контактная информация</h2>
-        <p> Барбершоп Борадинский<br> адрес и тд </p>
-        <p> Время работы</p>
-        <a class="btn" href="#">Как проехать</a>
+        <p> Барбершоп Борадинский<br> Адрес: г. Санкт-Петербург, Б. Конюшенная,д. 19/8
+          Телефон: +7(812)666-02-66</p>
+        <p> Время работы:<br> пн - пт: с 10:00 до 22:00<br>сб - вс: с 10:00 до 19:00</p>
+        <a class="btn map-link" href="#">Как проехать</a>
         <a class="btn" href="#">Обратная связь</a>
       </div>
       <div class="index-content-right">
         <h2 class="index-content-title">Записаться</h2>
-        <p> Укажите желаемое время и дату и мы взяжемся в вами</p>
+        <p> Укажите желаемое время и дату и мы cвяжемся в вами для подтверждения брони</p>
         <form class="appointment-form" action="http://echo/htmlacademy.tu" method="post">
           <input type="text" name="data" value="" placeholder="Дата">
           <input type="text" name="time" value="" placeholder="Время">
@@ -92,13 +95,14 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="conteiner">
+    <div class="container clearfix">
       <section class="footer-contacts">
-        Барбершоп Борадинский адрес <br>
-        <a href="#">как нас найти?</a><br> телефон
+        Барбершоп Борадинский Адрес: г. Санкт-Петербург, Б. Конюшенная,д. 19/8
+           <br>
+        <a class="map-link"href="#">как нас найти?</a><br> Телефон: +7(812)666-02-66
       </section>
       <section class="footer-social">
-        <p>Давай дружить</p>
+        <p>Давай дружить!</p>
         <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -109,6 +113,102 @@
       </section>
     </div>
   </footer>
+  <div class="modal-content">
+  	<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  	<h2 class="model-content-title">Личный кабинет</h2>
+  	<p>Введите свой логин и пароль</p>
+  	<form class="login-form" action="http://echo.htmlacademy.ru" method="post">
+  		<input class="icon-user" type="text" name="login" placeholder="Логин">
+  		<input class="icon-password" type="password" name="password" placeholder="Пароль">
+  		<label class="login-checkbox">
+  			<input type="checkbox" name="remember">
+  			<span class="checkbox-indicator"></span>
+  			Запомните меня
+  		</label>
+  		<a class="restore" href="#"> Я забыл пароль!</a>
+  		<button class="btn" type="submit">Войти</button>
+  	</form>
+  </div>
+  <div class="modal-content-map">
+  	<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  	<div id="yandex-map">
+  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412409!2d30.320894616222446!3d59.938796869047735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1465759327872" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+  	</div>
+  </div>
+  <div class="modal-overlay"></div>
+  <script>
+	 var link = document.querySelector(".login");
+	 var popup = document.querySelector(".modal-content");
+	  var form = popup.querySelector("form");
+	  var close = popup.querySelector(".modal-content-close");
+	  var overlay = document.querySelector(".modal-overlay");
+	  var login = popup.querySelector("[name=login]"); 
+	  var password = popup.querySelector("[name=password]");
+	  
+	  var map = document.querySelector(".map-link");
+	  var showmap = document.querySelector(".modal-content-map")
+	  var close2 = document.querySelector(".modal-content-map .modal-content-close");
+	  var storage = localStorage.getItem("login");
+	  
+	  link.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  popup.classList.add("modal-content-show");
+		  overlay.classList.add("modal-overlay-show");
+		  
+		  if (storage) {
+			  login.value = storage;
+			  password.focus();
+		  } else {
+			  login.focus();
+		  }
+	  });
+	  
+	  form.addEventListener("submit", function(event) {
+		  if (!login.value || !password.value) {
+		  event.preventDefault();
+		  popup.classList.add("modal-error");  
+//		  console.log("login.value");
+//		  console.log("password.value");
+		  } else {
+			  localStorage.setItem("login", login.value);
+		  }
+	  });
+	  
+	  close.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  popup.classList.remove("modal-content-show");
+		  popup.classList.remove("modal-error");
+		  overlay.classList.remove("modal-overlay-show");
+	  });
+	  
+	 overlay.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  popup.classList.remove("modal-content-show");
+		  popup.classList.remove("modal-error");
+		  showmap.classList.remove("modal-content-map-show");
+		  overlay.classList.remove("modal-overlay-show");
+	 });
+	  
+	  map.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  showmap.classList.add("modal-content-map-show");
+		  overlay.classList.add("modal-overlay-show");
+	  });
+	  
+	  close2.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  showmap.classList.remove("modal-content-map-show");
+		  overlay.classList.remove("modal-overlay-show");
+	  });
+	  window.addEventListener("keydown", function(event) {
+		  if (event.keyCode === 27) {
+			  if (popup.classList.remove("modal-content-show"));{
+			  popup.classList.remove("modal-content-show");
+			  overlay.classList.remove("modal-overlay-show");
+		  }
+	  }
+	  });
+	</script>
 </body>
 
 </html>

@@ -3,21 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>BarbershopItem</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">  
+  <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
-            <div class="container">   
+            <div class="container clearfix">   
                 <nav class="main-navigation">
-                    <div class="item-logo">
-                        <a href="#"><img src="img/item_logo.png" width="368" height="208" alt="Барбершоп борадинский"></a>
-            </div>
+					<a  class="logo-inner" href="index.html"><img src="img/item_logo.png" width="111" height="24" alt="Барбершоп борадинский"></a>
                     <ul>
                         <li><a href="#">ИНФОРМАЦИЯ</a></li>
                          <li><a href="#">НОВОСТИ</a></li>
                         <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-                        <li><a href="#">МАГАЗИН</a></li>
+						<li class="active"><span>МАГАЗИН</span></li>
                         <li><a href="#">КОНТАКТЫ</a></li>
-          <!--         <li><a href="#">ВХОД</a></li> -->
                     </ul>
                 </nav>
             <div class="user-block">
@@ -25,52 +25,55 @@
             </div>
             </div>
         </header>
-        <main class="container">
+        <main class="container clearfix">
+          <div class="inner-page-title"> 
           <h1>Набор для путешествий "Baxter of California"</h1>
-          <div cass="breadcrumbs">
-            <ul class="item-navigation">
+            <ul class="breadcrumbs">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Магазин</a></li>
                 <li><a href="#">Средства для ухода</a></li>
-                <li><a href="#">Набор для путешествий "Baxter of California"</a></li>
+                <li class="current">Набор для путешествий "Baxter of California"</li>
             </ul>
           </div> 
-          <div class="item-content">    
-            <div class="item-content-left">
+          <div class="inner-content">
+<!--          <div class="inner-columns clearfix">    -->
+            <div class="inner-column-left">
                 <img src="img/bigitem.png" width="460" heigth="498" alt="Фотография набора">
                 <img src="img/smallfoto_1.png" width=" 150" height="140" alt="Фотография набора">
                 <img src="img/smallfoto_2.png" width=" 150" height="140" alt="Фотография набора">
                 <img src="img/smallfoto_3.png" width=" 150" height="140" alt="Фотография набора">
             </div>
-            <div class="item-content-right">
-              <section class="discription">    
+            <div class="inner-column-right">
+              <div class="discription">    
                 <b>Есть в наличии</b>
-                <p>артикул:dexter-ae</p>
+                <span class="art">артикул:dexter-ae</span>
                 <p>Travel kit -Необходимый аксессуар во время любового путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор так же может стать отличным подарком.</p>
                 <div class="price">2 900 руб.</div>
-                <button lass="btn" href="#">Купить</button>
-              </section>
-              <div class="item-include">
-                <h2>В набор входят:</h2>
-                  <ul>
+                <button class="btn" type="button" href="#">Купить</button>
+              </div>
+			  </div>
+<!--              <div class="inner-columns clearfix">-->
+             <div class="inner-column-right">
+              <h2>В набор входят:</h2>
+                  <ul class="custom-list-1">
                     <li>Средство для умывания (50мл)</li>
                     <li>Увлажняющий крем (50мл)</li>
                     <li>крем длч бритья (50мл)</li>
                     <li>Крем после бритья, шампунь (50мл)</li>
                     <li>Удобная кожаная косметичка </li>  
                   </ul>
+				  </div>
               </div>    
-            </div>  
-          </div>    
         </main>
-        <footer class="main-footer">
-    <div class="conteiner">
+     <footer class="main-footer">
+    <div class="container clearfix">
       <section class="footer-contacts">
-        Барбершоп Борадинский адрес <br>
-        <a href="#">как нас найти?</a><br> телефон
+        Барбершоп Борадинский Адрес: г. Санкт-Петербург, Б. Конюшенная,д. 19/8
+           <br>
+        <a href="#">как нас найти?</a><br> Телефон: +7(812)666-02-66
       </section>
       <section class="footer-social">
-        <p>Давай дружить</p>
+        <p>Давай дружить!</p>
         <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
